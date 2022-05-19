@@ -70,6 +70,7 @@ sample_id_input <- read.csv("sample_name_lookup.csv")
 ncvar_put(nc,"sampleID", sample_id_input$Sample_ID)
 
 #Create theB Allele Frequency and LRR input files by e.g. by exporting from Genome Studio Full Data Table
+#Ensure that the data is sorted by chromosome and position
 #Ensure that the columns in the files match the Sample ID in the order we have just saved into the NetCDF file by e.g. sorting by the Genome Studio Index column
 baf_input <- read.csv("baf_data_table.txt",sep="\t")
 #Take out header columns
