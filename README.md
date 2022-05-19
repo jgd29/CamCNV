@@ -2,7 +2,7 @@
 CamCNV pipeline for calling rare CNVs from Illumina data.
 
 The basic steps of the pipeline as outlined in the example code are:
-1. Load Log R Ratio intensities (LRR) and B Allele Frequencies (BAF) from Illumina gentotyping into a NetCDF data store
+1. Load Log R Ratio intensities (LRR) and B Allele Frequencies (BAF), sorted by chromosome and position, from Illumina gentotyping into a NetCDF data store
 2. Run a principal component adjustment on the LRR
 3. Calculate the mean and standard deviation of the LRR for each probe across all samples and convert the LRR into z-scores
 4. For each sample segment the z-scores using DNACopy (https://bioconductor.org/packages/release/bioc/html/DNAcopy.html) and identify potential CNVs from the mean z-scores of the segments
