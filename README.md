@@ -9,3 +9,4 @@ The basic steps of the pipeline as outlined in the example code are:
 5. Generate additional QC scores for each CNVs
 
 The pipeline uses a NetCDF data store and the R ncdf4 library (https://cran.r-project.org/web/packages/ncdf4/index.html) but could be easily adapted to use simple R data objects. For loading large datasets into NetCDF files I have found the Perl NetCDF libraries (https://metacpan.org/source/DHUNT/PDL-NetCDF-4.20/netcdf.pd) faster.
+Note the bigPCA package (http://cran.nexr.com/web/packages/bigpca/index.html) has not been updated and requires an older version of R e.g. R-3.4.2 - other R PCA packages could be used. 
